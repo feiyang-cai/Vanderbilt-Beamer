@@ -1,0 +1,111 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textgreek}
+\usepackage{fixltx2e}
+
+
+\setbeamertemplate{navigation symbols}{}
+
+
+\usetheme{Madrid}
+\usecolortheme{beaver}
+\usefonttheme{serif}
+\definecolor{darkred}{rgb}{0.867,0.769,0.518}
+\makeatletter
+\setbeamertemplate{footline}
+{
+	\leavevmode%
+	\hbox{%
+		\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+			\usebeamerfont{author in head/foot}\insertshorttitle
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+			\usebeamerfont{title in head/foot}\insertsection
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+			\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+			\insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+	\end{beamercolorbox}}%
+	\vskip0pt%
+}
+\makeatother
+
+
+
+\usepackage{multimedia}
+\addtobeamertemplate{frametitle}{\vskip2ex}{}
+\setbeamertemplate{itemize item}{\color{black}$\blacksquare$}
+\setbeamertemplate{itemize subitem}{\color{darkred}$\blacktriangleright$}
+\setbeamertemplate{itemize subsubitem}{\color{gray}$\blacksquare$}
+\setbeamertemplate{sections/subsections in toc}[sections numbered]
+\setbeamertemplate{frametitle}{\vspace{4mm}\vbox{\hsize=10cm\bfseries\strut\insertframetitle\strut}}
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{background}}
+
+
+
+
+
+% presentation info
+\title[Vandy Theme]{\textsc{Vanderbilt University Beamer Theme}}
+\author 
+{\textsc{Firstname Last}
+	%\inst{1}
+}
+
+\institute % (optional)
+{
+	%\inst{1}%
+	\textsc{Vanderbilt University, Nashville, USA}
+}
+
+\date[BestConf 2022] % (optional)
+{Dec 20, 2022\\         % Date
+BestConf, Nashville, USA} % conference information
+
+
+\begin{document}
+	% title page
+	{	
+	\usebackgroundtemplate{\includegraphics[width=\paperwidth]{backgroundTitleISIS}}
+	% if you are not from ISIS, please use following background
+	%\usebackgroundtemplate{\includegraphics[width=\paperwidth]{backgroundTitle}}
+	\setbeamertemplate{footline}{} 
+	
+	\section{Hello page}
+	\begin{frame}
+		\vspace{10mm}
+		\titlepage
+	\end{frame}
+	}
+	\addtocounter{framenumber}{-1}
+
+
+	% slide 1
+	\section{Introduction}
+	\begin{frame}{\textsc{Introduction}}
+		\begin{itemize}
+			\item Point 1
+			\item Point 2
+			\begin{itemize}
+				\item Sub point 2
+			\end{itemize}
+			\item Point 3
+			\begin{itemize}
+				\item Sub point 3
+				\begin{itemize}
+					\item Sub sub point 3
+				\end{itemize}
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+
+
+
+
+
+
+
+\end{document}
